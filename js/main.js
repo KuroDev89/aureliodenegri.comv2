@@ -56,7 +56,11 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-/*HIDE AND SHOW .OPEN*/
-$('.menu-bar').on('click', function(){
-    $('.contenido').toggleClass('.open');
-  });
+
+/*mostrar y ocultar sidebar*/
+const contenido= document.querySelector('.contenido')
+const menubar =document.querySelector('.menu-bar')
+
+menubar.addEventListener('click', ()=>{
+  contenido.classList.toggle('open');
+})

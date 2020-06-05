@@ -11,9 +11,10 @@
 .sidebar{
   position: absolute;
   width: 250px;
-  min-height: 100%;
+  height: 100%;
   background-color: #040b14;
   padding: 2rem;
+  z-index: -2;
   }
 
 .profile-pic img{
@@ -117,19 +118,36 @@ ul{
   /*BODY*/
 
   .contenido{
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    background-color: #909090;
-    transition: all 3s;
+
+    transition: all 1.5s;
   }
 
   .menu-bar{
     cursor: pointer;
     margin: 1rem;
     font-size: 1.5rem;
+    position: relative;
+    color:#339b5e;
   }
+
+  .menu-bar i{
+
+  }
+
 
   .open{
     transform:translateX(250px);
+  }
+
+  .carousel-item {
+    z-index: -2;
+  }
+
+  .carousel-item img{
+    min-width: 100% ;
+    padding: 0;
+
   }
