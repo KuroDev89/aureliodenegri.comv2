@@ -1,4 +1,4 @@
-
+/*TEXT ROTATION*/
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -55,3 +55,8 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+/*HIDE AND SHOW .OPEN*/
+$('.menu-bar').on('click', function(){
+    $('.contenido').toggleClass('.open');
+  });
