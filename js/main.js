@@ -64,3 +64,30 @@ const menubar =document.querySelector('.menu-bar')
 menubar.addEventListener('click', ()=>{
   contenido.classList.toggle('open');
 })
+
+
+/*THIS SHOWS AND HIDES MENU ITEMS*/
+menubar.addEventListener('click', ()=>{
+  contenido.addClass('show');
+})
+
+
+/*BACK TO TOP BUTTON mobile*/
+$(document).ready(function() {
+  $('.top2').click(function() {
+    $('body').animate(
+      {
+        scrollTop: '0px'
+      },
+      2000
+    );
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $('.top2').slideDown(0);
+    } else {
+      $('.top2').slideUp(0);
+    }
+  });
+});

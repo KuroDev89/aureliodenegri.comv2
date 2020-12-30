@@ -11,19 +11,19 @@
 .sidebar{
   position: absolute;
   width: 250px;
-  height: 100%;
-  background-color: #040b14;
+  height: 100vw;
+  background-color:#0F222D;
   padding: 2rem;
   z-index: -2;
   }
 
 .profile-pic img{
   margin:0 0 0.75rem 1.75rem;
-  width: 8rem;
-  height: 8rem;
+  width: 9rem;
+  height: 9rem;
   object-fit: cover;
   border-radius: 50%;
-  border: solid #2c2f3f 5px;
+  border: solid #fff 5px;
 }
 
 .profile .profile-name h1 span{
@@ -48,11 +48,15 @@
   display: block;
 }
 
+
+.social-icons{
+  margin-left: 1rem;
+}
 .social-icons a {
   margin:1rem 0.4rem 0 0;
   display: inline-block;
   border-radius: 50%;
-  background-color: #212431;
+  background-color:#F55139;
   padding: 0.55rem;
 }
 
@@ -121,23 +125,28 @@ ul{
     width: 100%;
     height: 100%;
     position: absolute;
-
     transition: all 1.5s;
   }
 
   .menu-bar{
     cursor: pointer;
     margin: 1rem;
-    font-size: 1.5rem;
-    position: relative;
+    font-size: 2rem;
+    position:fixed;
     color:#339b5e;
+    z-index: 3;
+    top: 0;
   }
 
-  .menu-bar i{
-
+  .sidebar{
+    position: fixed;
   }
 
+  #times{
+    display:none;
+  }
 
+ 
   .open{
     transform:translateX(250px);
   }
@@ -151,3 +160,12 @@ ul{
     padding: 0;
 
   }
+
+.block{
+  background-color: #fff;
+  min-width: 100%;
+
+}
+
+
+
